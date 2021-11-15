@@ -19,6 +19,7 @@ At the end of this lesson, you are going to be able to create databases, insert 
     - [2/1. Create Database](#21-create-database)
     - [2/2. Drop Database](#22-drop-database)
     - [2/3. Create Table](#23-create-table)
+    - [2/4. Drop Table](#24-drop-table)
 
 <hr>
 
@@ -100,3 +101,15 @@ CREATE TABLE test_table(
    PRIMARY KEY(id)
 );
 ```
+
+### 2/4. Drop Table
+The `DROP TABLE` statement is used to drop a table.<br>
+**Syntax:**
+```sql
+DROP TABLE tablename;
+```
+**Example:**
+```sql
+DROP TABLE test_table;
+```
+This statement drops the `test_table` table.
