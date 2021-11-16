@@ -22,6 +22,7 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [2/4. Drop Table](#24-drop-table)
     - [2/5. Insert Into](#25-insert-into)
     - [2/6. Update](#26-update)
+    - [2/7. Delete](#27-delete)
 
 <hr>
 
@@ -136,4 +137,15 @@ UPDATE table_name SET column = colvalue, ... WHERE condition;
 **Example:**
 ```sql
 UPDATE test_table SET age = 24 WHERE id = 1;
+```
+
+### 2/7. Delete
+The DELETE statement is used to delete existing records in a table.
+**Syntax:**
+```sql
+DELETE FROM table_name WHERE condition;
+```
+**Example:**
+```sql
+DELETE FROM test_table WHERE id = 1;
 ```
