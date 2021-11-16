@@ -4,7 +4,7 @@
 
 # SQL for Beginners
 Each lesson includes an example, an explanation, an exercise, and a solution. <br>
-At the end of this lesson, you are going to be able to create databases, insert and edit data, and write complex queries. <br>
+At the end of this lesson, you are going to be able to create databases and tables, insert and edit data, and write complex queries. <br>
 
 **What do you need?** Basic knowledge of relational databases, and [xampp](https://www.apachefriends.org/hu/download.html).
 
@@ -20,6 +20,7 @@ At the end of this lesson, you are going to be able to create databases, insert 
     - [2/2. Drop Database](#22-drop-database)
     - [2/3. Create Table](#23-create-table)
     - [2/4. Drop Table](#24-drop-table)
+    - [2/5. Insert Into](#25-insert-into)
 
 <hr>
 
@@ -113,3 +114,14 @@ DROP TABLE tablename;
 DROP TABLE test_table;
 ```
 This statement drops the `test_table` table.
+
+### 2/5. Insert Into
+The INSERT INTO statement is used to insert new records in a table.<br>
+**Syntax:**
+```sql
+INSERT INTO table_name(column1, column2, ...) VALUES(value1, value2, ...);
+```
+**Example:**
+```sql
+INSERT INTO test_table(name, email, age, passwd) VALUES('John', 'john@domain.com', 23, 'jEm3;l!kA78f');
+```
