@@ -21,6 +21,7 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [2/3. Create Table](#23-create-table)
     - [2/4. Drop Table](#24-drop-table)
     - [2/5. Insert Into](#25-insert-into)
+    - [2/6. Update](#26-update)
 
 <hr>
 
@@ -124,4 +125,15 @@ INSERT INTO table_name(column1, column2, ...) VALUES(value1, value2, ...);
 **Example:**
 ```sql
 INSERT INTO test_table(name, email, age, passwd) VALUES('John', 'john@domain.com', 23, 'jEm3;l!kA78f');
+```
+
+### 2/6. Update
+The UPDATE statement is used to modify the existing records in a table.
+**Syntax:**
+```sql
+UPDATE table_name SET column = colvalue, ... WHERE condition;
+```
+**Example:**
+```sql
+UPDATE test_table SET age = 24 WHERE id = 1;
 ```
