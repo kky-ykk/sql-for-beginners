@@ -23,6 +23,7 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [2/5. Insert Into](#25-insert-into)
     - [2/6. Update](#26-update)
     - [2/7. Delete](#27-delete)
+    - [2/8. Test](#28-test)
 
 <hr>
 
@@ -149,3 +150,23 @@ DELETE FROM table_name WHERE condition;
 ```sql
 DELETE FROM test_table WHERE id = 1;
 ```
+
+### 2/8. Test
+**1.**<br>
+Create a Database called `testdb`;<br>
+**2.**<br>
+Create a Table in this `testdb` database called `test_table`, with the following fields:<br>
+- id --> integer, not null, primary key, auto incrementű
+- name --> string(40)
+- address --> string(100)
+- age --> integer
+
+**3.**<br>
+Insert two records into the table.<br> 
+*First:* name: 'John', address: 'US', age: 23<br>
+*Second:* name: 'Joshua', address: 'UK', age: 17<br>
+**4.**<br>
+Update every address to `USA`, where the address is `US`.<br>
+**5.**<br>
+Delete every record in the table, where the age is 17.<br>
+*You can check your solution [here](solutions/test1.sql).*
