@@ -156,7 +156,7 @@ DELETE FROM test_table WHERE id = 1;
 Create a Database called `testdb`;<br>
 **2.**<br>
 Create a Table in this `testdb` database called `test_table`, with the following fields:<br>
-- id --> integer, not null, primary key, auto incrementű
+- id --> integer, not null, primary key, auto increment
 - name --> string(40)
 - address --> string(100)
 - age --> integer
