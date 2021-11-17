@@ -1,5 +1,5 @@
 *.sql   linguist-detectable=true
-*.sql   linguist-language=sq
+*.sql   linguist-language=sql
 
 *.txt   text
 *.md    text
