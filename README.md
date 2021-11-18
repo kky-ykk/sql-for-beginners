@@ -26,6 +26,8 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [2/8. Test](#28-test)
   - [3. SQL Queries](#3-sql-queries)
     - [3/1. Select](#31-select)
+    - [3/2. Distinct](#32-distinct)
+    - [3/3. Where](#33-where)
 
 <hr>
 
@@ -121,7 +123,7 @@ DROP TABLE test_table;
 This statement drops the `test_table` table.
 
 ### 2/5. Insert Into
-The INSERT INTO statement is used to insert new records in a table.<br>
+The `INSERT INTO` statement is used to insert new records in a table.<br>
 **Syntax:**
 ```sql
 INSERT INTO table_name(column1, column2, ...) VALUES(value1, value2, ...);
@@ -132,7 +134,7 @@ INSERT INTO test_table(name, email, age, passwd) VALUES('John', 'john@domain.com
 ```
 
 ### 2/6. Update
-The UPDATE statement is used to modify the existing records in a table.
+The `UPDATE` statement is used to modify the existing records in a table.
 **Syntax:**
 ```sql
 UPDATE table_name SET column = colvalue, ... WHERE condition;
@@ -143,7 +145,7 @@ UPDATE test_table SET age = 24 WHERE id = 1;
 ```
 
 ### 2/7. Delete
-The DELETE statement is used to delete existing records in a table.
+The `DELETE` statement is used to delete existing records in a table.
 **Syntax:**
 ```sql
 DELETE FROM table_name WHERE condition;
@@ -175,14 +177,28 @@ Delete every record in the table, where the age is 17.<br>
 
 ## 3. SQL Queries
 ### 3/1. Select
-The SELECT statement is used to select data from a database.
+The `SELECT` statement is used to select data from a database.<br>
 **Syntax:**
 ```sql
 SELECT col1, col2, ... FROM table_name;
 -- You can use the * to select every column:
 SELECT * FROM table_name; 
 ```
+
+### 3/2. Distinct
+The `DISTINCT` statement is used to return only different values.<br>
+**Syntax:**
+```sql
+SELECT DISTINCT column_name FROM table_name;
+```
+
+### 3/3. Where
+The `WHERE` statement is used to select the records with the specified condition.<br>
+**Syntax:**
+```sql
+SELECT columns FROM table_name WHERE condition;
+```
 **Example:**
 ```sql
-SELECT * FROM test_table;
+SELECT * FROM test_table WHERE id = 1;
 ```
