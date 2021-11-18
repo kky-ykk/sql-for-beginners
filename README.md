@@ -24,6 +24,8 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [2/6. Update](#26-update)
     - [2/7. Delete](#27-delete)
     - [2/8. Test](#28-test)
+  - [3. SQL Queries](#3-sql-queries)
+    - [3/1. Select](#31-select)
 
 <hr>
 
@@ -170,3 +172,17 @@ Update every address to `USA`, where the address is `US`.<br>
 **5.**<br>
 Delete every record in the table, where the age is 17.<br>
 *You can check your solution [here](solutions/test1.sql).*
+
+## 3. SQL Queries
+### 3/1. Select
+The SELECT statement is used to select data from a database.
+**Syntax:**
+```sql
+SELECT col1, col2, ... FROM table_name;
+-- You can use the * to select every column:
+SELECT * FROM table_name; 
+```
+**Example:**
+```sql
+SELECT * FROM test_table;
+```
