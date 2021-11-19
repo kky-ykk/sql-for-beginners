@@ -209,8 +209,9 @@ The `WHERE` clause can be combined with `AND`, `OR`, and `NOT` operators.<br>
 - The `AND` operator displays a record if all the conditions separated by `AND` are **true**.
 - The `OR` operator displays a record if any of the conditions separated by `OR` is **true**.
 - The `NOT` operator displays a record if the condition is **NOT TRUE**.
-- 
+
 <br>**Syntax:**
+
 ```sql
 -- AND:
 SELECT * FROM table_name WHERE condition1 AND condition2;
