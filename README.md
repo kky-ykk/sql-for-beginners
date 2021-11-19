@@ -28,6 +28,7 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [3/1. Select](#31-select)
     - [3/2. Distinct](#32-distinct)
     - [3/3. Where](#33-where)
+    - [3/4 And, Or, Not](#34-and-or-not)
 
 <hr>
 
@@ -201,4 +202,29 @@ SELECT columns FROM table_name WHERE condition;
 **Example:**
 ```sql
 SELECT * FROM test_table WHERE id = 1;
+```
+
+### 3/4 And, Or, Not
+The `WHERE` clause can be combined with `AND`, `OR`, and `NOT` operators.<br>
+- The `AND` operator displays a record if all the conditions separated by `AND` are **true**.
+- The `OR` operator displays a record if any of the conditions separated by `OR` is **true**.
+- The `NOT` operator displays a record if the condition is **NOT TRUE**.
+- 
+<br>**Syntax:**
+```sql
+-- AND:
+SELECT * FROM table_name WHERE condition1 AND condition2;
+-- OR: 
+SELECT * FROM table_name WHERE condition1 OR condition2;
+-- NOT:
+SELECT * FROM table_name WHERE NOT condition1;
+```
+**Example:**
+```sql
+-- AND:
+SELECT * FROM test_table WHERE name = 'John' AND age = 17;
+-- OR: 
+SELECT * FROM test_table WHERE name = 'John' OR age = 17;
+-- NOT:
+SELECT * FROM test_table WHERE NOT age = 17;
 ```
