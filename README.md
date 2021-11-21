@@ -28,7 +28,8 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [3/1. Select](#31-select)
     - [3/2. Distinct](#32-distinct)
     - [3/3. Where](#33-where)
-    - [3/4 And, Or, Not](#34-and-or-not)
+    - [3/4. And, Or, Not](#34-and-or-not)
+    - [3/5. Order By](#35-order-by)
 
 <hr>
 
@@ -204,7 +205,7 @@ SELECT columns FROM table_name WHERE condition;
 SELECT * FROM test_table WHERE id = 1;
 ```
 
-### 3/4 And, Or, Not
+### 3/4. And, Or, Not
 The `WHERE` clause can be combined with `AND`, `OR`, and `NOT` operators.<br>
 - The `AND` operator displays a record if all the conditions separated by `AND` are **true**.
 - The `OR` operator displays a record if any of the conditions separated by `OR` is **true**.
@@ -228,4 +229,19 @@ SELECT * FROM test_table WHERE name = 'John' AND age = 17;
 SELECT * FROM test_table WHERE name = 'John' OR age = 17;
 -- NOT:
 SELECT * FROM test_table WHERE NOT age = 17;
+```
+
+### 3/5. Order By
+The `ORDER BY` keyword is used to sort the result-set in ascending or descending order.<br>
+**Syntax:**
+```sql
+-- ascending order:
+SELECT * FROM table_name ORDER BY column;
+SELECT * FROM table_name ORDER BY column ASC;
+-- descending order:
+SELECT * FROM table_name ORDER BY column DESC;
+```
+**Example:**
+```sql
+SELECT * FROM test_table ORDER BY id DESC;
 ```
