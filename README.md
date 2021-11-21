@@ -30,6 +30,7 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [3/3. Where](#33-where)
     - [3/4. And, Or, Not](#34-and-or-not)
     - [3/5. Order By](#35-order-by)
+    - [3/6. Like](#36-like)
 
 <hr>
 
@@ -244,4 +245,24 @@ SELECT * FROM table_name ORDER BY column DESC;
 **Example:**
 ```sql
 SELECT * FROM test_table ORDER BY id DESC;
+```
+
+### 3/6. Like
+The `LIKE` operator is used to search for a specified pattern in a column using wildcards.
+- The '**%**' represents multiple characters
+- The '**_**' represents one, single character
+
+<br>**Syntax:**
+
+```sql
+SELECT * FROM table_name WHERE column LIKE pattern;
+```
+**Examples:**
+```sql
+-- selects all users where the name starts with J
+SELECT * FROM test_table WHERE name LIKE 'J%';
+-- selects all users where the address ends with K
+SELECT * FROM test_table WHERE address LIKE '%K';
+-- selects all users where the name starts with any character and the second letter is o
+SELECT * FROM test_table WHERE name LIKE '_o%';
 ```
