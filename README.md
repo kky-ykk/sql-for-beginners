@@ -33,6 +33,7 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [3/6. Like](#36-like)
     - [3/7. Between](#37-between)
     - [3/8. Min and Max](#38-min-and-max)
+    - [3/9. Count, Sum](#39-count-sum)
 
 <hr>
 
@@ -298,4 +299,23 @@ SELECT MAX(column) FROM table_name;
 SELECT MIN(age) FROM test_table;
 -- max
 SELECT MAX(age) FROM test_table;
+```
+
+### 3/9. Count, Sum
+The `COUNT()` function returns the number of rows that matches a specified criterion.<br>
+**Syntax:**
+```sql
+SELECT COUNT(column) FROM table_name;
+```
+The `SUM()` function returns the total sum of a numeric column.<br>
+**Syntax:**
+```sql
+SELECT SUM(column) FROM table_name;
+```
+**Example:**
+```sql
+-- count
+SELECT COUNT(id) FROM test_table;
+-- sum
+SELECT SUM(age) FROM test_table;
 ```
