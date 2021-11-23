@@ -32,6 +32,7 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [3/5. Order By](#35-order-by)
     - [3/6. Like](#36-like)
     - [3/7. Between](#37-between)
+    - [3/8. Min and Max](#38-min-and-max)
 
 <hr>
 
@@ -279,4 +280,22 @@ SELECT * FROM table_name WHERE column BETWEEN value1 AND value2;
 SELECT * FROM test_table WHERE age BETWEEN 16 AND 18;
 -- not between
 SELECT * FROM test_table WHERE age NOT BETWEEN 40 AND 100;
+```
+
+### 3/8. Min and Max
+The `MIN()` function returns the smallest value of the selected column.<br>
+The `MAX()` function returns the largest value of the selected column.<br>
+**Syntax:**
+```sql
+-- min
+SELECT MIN(column) FROM table_name;
+-- max
+SELECT MAX(column) FROM table_name;
+```
+**Example:**
+```sql
+-- min
+SELECT MIN(age) FROM test_table;
+-- max
+SELECT MAX(age) FROM test_table;
 ```
