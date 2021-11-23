@@ -31,6 +31,7 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [3/4. And, Or, Not](#34-and-or-not)
     - [3/5. Order By](#35-order-by)
     - [3/6. Like](#36-like)
+    - [3/7. Between](#37-between)
 
 <hr>
 
@@ -265,4 +266,17 @@ SELECT * FROM test_table WHERE name LIKE 'J%';
 SELECT * FROM test_table WHERE address LIKE '%K';
 -- selects all users where the name starts with any character and the second letter is o
 SELECT * FROM test_table WHERE name LIKE '_o%';
+```
+
+### 3/7. Between
+The `BETWEEN` operator selects values within a given range.<br>
+**Syntax:**
+```sql
+SELECT * FROM table_name WHERE column BETWEEN value1 AND value2;
+```
+**Example:**
+```sql
+SELECT * FROM test_table WHERE age BETWEEN 16 AND 18;
+-- not between
+SELECT * FROM test_table WHERE age NOT BETWEEN 40 AND 100;
 ```
