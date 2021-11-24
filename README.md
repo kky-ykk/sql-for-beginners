@@ -36,6 +36,7 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [3/9. Count, Sum](#39-count-sum)
     - [3/10. Joins](#310-joins)
       - [3/10/1. Inner Join](#3101-inner-join)
+      - [3/10/2. Full Outer Join](#3102-full-outer-join)
 
 <hr>
 
@@ -332,5 +333,15 @@ SELECT columns FROM first_table INNER JOIN second_table ON first_table.column = 
 ```
 **Example:**
 ```sql
-SELECT name, address FROM test_table INNER JOIN test_table2 ON test_table.id = test_table2.id;
+SELECT name, address FROM test_table INNER JOIN test_table2 ON test_table.id = test_table2.userid;
+```
+#### 3/10/2. Full Outer Join
+The `FULL OUTER JOIN` keyword returns all records when there is a match in left or right table records.<br>
+**Syntax:**
+```sql
+SELECT columns FROM first_table FULL OUTER JOIN second_table ON first_table.column = second_table.column;
+```
+**Example:**
+```sql
+SELECT name, address FROM test_table FULL OUTER JOIN test_table2 ON test_table.id = test_table2.userid;
 ```
