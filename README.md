@@ -34,6 +34,8 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [3/7. Between](#37-between)
     - [3/8. Min and Max](#38-min-and-max)
     - [3/9. Count, Sum](#39-count-sum)
+    - [3/10. Joins](#310-joins)
+      - [3/10/1. Inner Join](#3101-inner-join)
 
 <hr>
 
@@ -318,4 +320,17 @@ SELECT SUM(column) FROM table_name;
 SELECT COUNT(id) FROM test_table;
 -- sum
 SELECT SUM(age) FROM test_table;
+```
+
+### 3/10. Joins
+A `JOIN` clause is used to combine rows from two or more tables, based on a related column between them.
+#### 3/10/1. Inner Join
+The `INNER JOIN` keyword selects records that have matching values in both tables.<br>
+**Syntax:**
+```sql
+SELECT columns FROM first_table INNER JOIN second_table ON first_table.column = second_table.column;
+```
+**Example:**
+```sql
+SELECT name, address FROM test_table INNER JOIN test_table2 ON test_table.id = test_table2.id;
 ```
