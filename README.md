@@ -3,7 +3,8 @@
 <img align="left" src="https://img.shields.io/badge/sql-%2300618A.svg?style=flat&logo=mysql&logoColor=white">
 
 # SQL for Beginners
-Each lesson includes an example, an explanation, an exercise, and a solution. <br>
+Each lesson includes a syntax example, an example, and an explanation. <br>
+At the end of every chapter, you find a test with solutions.<br>
 At the end of this lesson, you are going to be able to create databases and tables, insert and edit data, and write complex queries. <br>
 
 **What do you need?** Basic knowledge of relational databases, and [xampp](https://www.apachefriends.org/hu/download.html).
@@ -37,6 +38,7 @@ At the end of this lesson, you are going to be able to create databases and tabl
     - [3/10. Joins](#310-joins)
       - [3/10/1. Inner Join](#3101-inner-join)
       - [3/10/2. Full Outer Join](#3102-full-outer-join)
+    - [3/11. Aliases](#311-aliases)
 
 <hr>
 
@@ -344,4 +346,16 @@ SELECT columns FROM first_table FULL OUTER JOIN second_table ON first_table.colu
 **Example:**
 ```sql
 SELECT name, address FROM test_table FULL OUTER JOIN test_table2 ON test_table.id = test_table2.userid;
+```
+
+### 3/11. Aliases
+The aliases are used to give a column a temporary name.<br>
+An alias is created with the `AS` keyword.<br>
+**Syntax:**
+```sql
+SELECT column AS alias FROM table_name; 
+```
+**Example:**
+```sql
+SELECT name AS PersonName FROM test_table; 
 ```
