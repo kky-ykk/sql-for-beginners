@@ -45,10 +45,10 @@ At the end of this lesson, you are going to be able to create databases and tabl
 
 ## 1. SQL Basics
 ###  1/1. What is SQL?
-SQL (Structured Query Language) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables.
+**Ans**-SQL (Structured Query Language) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables.
 
 ### 1/2. What Can SQL do?
-SQL offers two main advantages over older read-write APIs such as ISAM or VSAM. Firstly, it introduced the concept of accessing many records with one single command. Secondly, it eliminates the need to specify how to reach a record, e.g. with or without an index. <br>
+**Ans**-SQL offers two main advantages over older read-write APIs such as ISAM or VSAM. Firstly, it introduced the concept of accessing many records with one single command. Secondly, it eliminates the need to specify how to reach a record, e.g. with or without an index. <br>
 SQL can execute queries against a database, for example, insert, update and delete records. Also, SQL can create, edit and delete databases and tables.
 
 ### 1/3. SQL syntax
