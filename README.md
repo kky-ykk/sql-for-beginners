@@ -39,6 +39,7 @@ At the end of this lesson, you are going to be able to create databases and tabl
       - [3/10/1. Inner Join](#3101-inner-join)
       - [3/10/2. Full Outer Join](#3102-full-outer-join)
     - [3/11. Aliases](#311-aliases)
+    - [3/12. Limit](#312-limit)
 
 <hr>
 
@@ -358,4 +359,15 @@ SELECT column AS alias FROM table_name;
 **Example:**
 ```sql
 SELECT name AS PersonName FROM test_table; 
+```
+
+### 3/12. Limit
+The `LIMIT` keyword is used to limit the result-set to a certain amount.<br>
+**Syntax:**
+```sql
+SELECT * FROM table_name LIMIT amount;
+```
+**Example:**
+```sql
+SELECT * FROM test_table LIMIT 10; 
 ```
